@@ -1,0 +1,39 @@
+POST http://localhost:3000/criar_usuarios
+Content-Type: application/json
+
+{
+    "title": "Conta 01",
+    "description": "Usuário admin",
+    "username": "admin",
+    "password": "123456"
+}
+
+###
+GET http://localhost:3000/criar_usuarios    
+
+###
+
+PUT  http://localhost:3000/criar_usuarios/
+Content-Type: application/json
+
+{
+    "title": "Conta 01",
+    "description": "Usuário admin",
+    "username": "admin",
+    "password": "123456"
+}
+
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "123456"
+}
+
+###
+//Aqui continua com o id (cadastro) que quero apagar
+DELETE http://localhost:3000/criar_usuarios/
+
